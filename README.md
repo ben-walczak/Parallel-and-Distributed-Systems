@@ -7,3 +7,5 @@ Problems can occur when threads have shared variables/memory. This is also known
 ### Compiling Programs into Executables
 - C - gcc -o executable_name program_name.c
 - C++ - g++ -o executable_name program_name.cpp -std=c++11
+- MPI C - mpicc -o mpihello mpihello.c
+  - mpiexec -np 8 ./mpihello // np is number of processes (must specify at startup)
